@@ -121,7 +121,7 @@ class EVChargingEnv(gym.Env):
 
         # 3. Set a random deadline (e.g., between 6 AM and 8 AM).
         # This forces the agent to learn an adaptive strategy.
-        self.deadline_hour = self.np_random.randint(low=6, high=9)
+        self.deadline_hour = self.np_random.integers(low=6, high=9)
 
         # Get the initial observation and info
         observation = self._get_observation()
