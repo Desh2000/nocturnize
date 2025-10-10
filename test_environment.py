@@ -8,7 +8,6 @@
 # This is a robust way to ensure the 'src' directory is on the Python path.
 # It finds the directory of this script and then adds the 'src' subfolder.
 import time
-from environment import EVChargingEnv
 import sys
 import os
 
@@ -21,6 +20,7 @@ sys.path.insert(0, src_path)
 
 # --- Imports ---
 # Now that the path is set up, this import will work correctly.
+from environment import EVChargingEnv
 
 # --- Main Test Logic ---
 if __name__ == "__main__":
