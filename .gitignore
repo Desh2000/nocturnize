@@ -207,3 +207,6 @@ marimo/_lsp/
 __marimo__/
 # Ignore trained model files by default
 *.h5
+
+# Ignore results and plotting outputs
+/results/
